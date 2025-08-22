@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daproza JavaScript Functions</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#292524] text-gray-900 p-6 font-sans">
+    <div class="max-w-3x1 max-auto bg-[#e7e5e4] shadow-lg rounded-lg p-6 space-y-6">
+        <h1 class="text-3x1 font-bold text-center text-[#292524]">
+            JavaScript Programming Lab
+        </h1>
+        <hr>
+        <p class="text-center text-5x1 text-gray-500 font-semibold"> 
+            Student Name: John Ryan | Date : 08/22/2025
+        </p>
+        <!-- Alert -->
+        <section>
+            <h2 class="text-x1 font-semibold mb-2">
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <button onclick="showWelcome()" class="btn">
+                        Welcome
+                    </button>
+                    <button onclick="goodMorning()" class="btn">
+                        Good Morning
+                    </button>
+                    <button onclick="goodAfternoon()" class="btn">
+                        Good Afternoon
+                    </button>
+                    <button onclick="goodNight()" class="btn">
+                        Good Night
+                    </button>
+                    <button onclick="specialMessage()" class="btn">
+                        Special
+                    </button>
+                </div>
+            </h2>
+        </section>
+        <!-- User Information -->
+        <section>
+            <h2 class="text-x1 font-semibold mb-2"> User Infomation:</h2>
+            <div class="flex flex-wrap bg-[#9ca3af] text-gray-900 p-6 font-sans">
+                <div class="flex flex-wrap bg-white text-gray-900 p-6 font-sans">
+                    <div class="space-y-2">
+                    <!-- Button 1 -->
+                    <button onclick="getName()" class="px-7 py-2 bg-[#71717a] text-white rounded text-shadow-2xs text-shadow-[#f5f5f5]">Get My Name</button>
+                    <p id="displayName" class="text-[#44403c] font-medium"></p>
+                    <!-- Button 2 -->
+                    <button onclick="calculateAge()" class="px-4 py-2 bg-[#71717a] text-white rounded text-shadow-2xs text-shadow-[#f5f5f5]">Calculate My Age</button>
+                    <p id="ageResult" class="text-green-700 font-medium"></p>
+                    <!-- Button 3 --> 
+                    <button onclick="getProfile()" class="px-7 py-2 bg-[#71717a] text-white rounded text-shadow-2xs text-shadow-[#f5f5f5]">Get My Profile</button>
+                    <p id="profile" class="text-green-700 font-medium"></p>
+                </div>
+            </div>
+        </section>
+        <!-- Ask Permission -->
+        <section>
+            <h2 class="text-x1 font-semibold mb-2">
+                Ask Permission: Yes/No Decisions
+            </h2>
+            <button onclick="askPermission()" class="btn">Ask Permission</button>
+        </section>
+        <!-- Change / Reset Text -->
+        <section>
+            <h2 class="text-x1 font-semibold mb-2">
+                Change / Reset Text: Interactive Elements
+            </h2>
+            <p id="text" class="mb-2 container bg-gray-100 w-32 text-center shadow-lg"> This is my text. </p>
+            <div class="flex gap-2">
+                <button onclick="changeText()" class="btn"> Change Text</button>
+                <button onclick="resetText()" class="btn"> Reset Text</button>
+            </div>
+        </section>
+    </div>
+    <script src="daproza.js"></script>
+</body>
+</html>
